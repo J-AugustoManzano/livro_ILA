@@ -1,0 +1,22 @@
+// programa COMPLEMENTAR6
+
+variaveis
+  numerico L
+  caracter TXT, ENTRA
+
+  funcao CENTRATEXTO(L, TXT)
+  inicio
+    posicionar L, inteiro((80 - comprimento(TXT) ) / 2)
+    escrever TXT 
+  fim
+
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre um texto:"
+  posicionar 1,17
+  ler ENTRA
+  cor "amarelo", 0
+  centratexto(3, ENTRA)
+  cor 7, 0
+fim

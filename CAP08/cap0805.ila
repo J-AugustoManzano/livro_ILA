@@ -1,0 +1,18 @@
+// programa COMPLEMENTAR5
+
+variaveis
+  numerico N, ENTRA
+
+  funcao TETO(N)
+  inicio
+    retornar inteiro(N) + 1 
+  fim
+
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre um valor numerico:"
+  posicionar 1,26
+  ler ENTRA
+  escrever "Resultado = ", teto(ENTRA)
+fim

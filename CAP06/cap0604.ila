@@ -1,0 +1,53 @@
+// programa TABELA4
+
+variaveis
+
+  matriz composta ALUNO[2]
+    caracter NOME
+    caracter TURMA
+    numerico SALA
+    matriz numerico NOTA[4]
+  fim_composta
+
+  numerico I, J
+
+inicio
+  para I = 1 ate 2
+    limpar
+    posicionar 1,1
+    escrever "Leitura das notas do aluno ", I 
+    posicionar 3,1 
+    escrever "Entre com o nome ...:"
+    posicionar 3,23
+    ler ALUNO[I]:NOME 
+    posicionar 4,1 
+    escrever "Entre com a turma ..:"
+    posicionar 4,23
+    ler ALUNO[I]:TURMA 
+    posicionar 5,1 
+    escrever "Entre com a sala ...:"
+    posicionar 5,23
+    ler ALUNO[I]:SALA 
+    posicionar 7,1
+    escrever "Notas do aluno"
+    para J = 1 ate 4
+      posicionar 8 + J,1
+      escrever "Nota:", J
+      posicionar 8 + J,8
+      ler ALUNO[I]:NOTA[J]
+    proximo
+  proximo
+  limpar
+  posicionar 1,1 
+  escrever "Apresentacao das Notas"
+  escrever " "
+  para I = 1 ate 2 
+    escrever I, "o. aluno .: ", ALUNO[I]:NOME 
+    escrever "Turma .....: ", ALUNO[I]:TURMA 
+    escrever "Sala ......: ", ALUNO[I]:SALA 
+    para J = 1 ate 4
+      escrever "Nota ......: ", J, " = ", ALUNO[I]:NOTA[J]
+    proximo
+    escrever " "
+  proximo
+fim

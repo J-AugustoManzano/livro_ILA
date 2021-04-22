@@ -1,0 +1,13 @@
+// programa CONDICAO6
+variaveis
+  numerico N
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre um numero:"
+  posicionar 1,18
+  ler N
+  se nao (N <= 3) entao 
+    escrever N
+  fim_se
+fim

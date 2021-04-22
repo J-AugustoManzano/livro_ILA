@@ -1,0 +1,29 @@
+// programa TABELA3
+variaveis
+  numerico I, J 
+  matriz numerico NOTA[8, 4]
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Leitura das Notas"
+  posicionar 2,1
+  para I = 1 ate 8 
+    posicionar I + 2,1
+    escrever "Notas do ", I, "o. aluno:"
+    para J = 1 ate 4
+      posicionar I + 2, (J * 6) + 16   
+      ler NOTA[I,J]
+    proximo
+    escrever " "
+  proximo
+  posicionar 12,1
+  escrever "Apresentacao das Notas"
+  para I = 1 ate 8 
+  posicionar I + 13,1
+    escrever I, "o. aluno:"
+    para J = 1 ate 4
+      posicionar I + 13, (J * 6) + 16   
+      escrever NOTA[I,J]
+    proximo
+  proximo
+fim

@@ -1,0 +1,15 @@
+// programa CONDICAO5
+variaveis
+  caracter SEXO
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre seu sexo:"
+  posicionar 1,17
+  ler SEXO
+  se (SEXO = "M") ou (SEXO = "F") entao 
+    escrever "Sexo valido."
+  senao
+    escrever "Sexo invalido."
+  fim_se
+fim

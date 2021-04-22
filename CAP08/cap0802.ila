@@ -1,0 +1,11 @@
+// programa COMPLEMENTAR2
+
+inicio
+  limpar
+  cor "branco","ciano"
+  janela 3,3,7,22
+  posicionar 5,5
+  cor "amarelo","ciano"
+  escrever "TESTE DE MOLDURA"
+  cor
+fim

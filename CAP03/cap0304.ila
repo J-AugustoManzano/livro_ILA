@@ -1,0 +1,15 @@
+// programa CONDICAO4
+variaveis
+  numerico N
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre numero:"
+  posicionar 1,15
+  ler N
+  se (N >= 1) e (N <= 9) entao
+    escrever "Valor na faixa de 1 a 9."
+  senao
+    escrever "Valor fora da faixa."
+  fim_se
+fim

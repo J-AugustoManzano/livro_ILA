@@ -1,0 +1,24 @@
+// programa CONDICAO2
+variaveis
+  numerico N1, N2, MD
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre 1a. nota:"
+  posicionar 1,17
+  ler N1
+  posicionar 2,1
+  escrever "Entre 2a. nota:"
+  posicionar 2,17
+  ler N2
+  MD = (N1 + N2) / 2
+  se (MD >= 5) entao 
+    posicionar 4,1
+    escrever "Aprovado" 
+  senao 
+    posicionar 4,1
+    escrever "Reprovado"
+  fim_se
+  posicionar 5,1
+  escrever "com media: ", MD
+fim

@@ -1,0 +1,27 @@
+// programa CONDICAO3
+variaveis
+  numerico N
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre valor:"
+  posicionar 1,14
+  ler N
+  posicionar 3,1
+  faca caso 
+    caso (N = 1):
+      escrever "Janeiro"
+    caso (N = 2):
+      escrever "Fevereiro"
+    caso (N = 3):
+      escrever "Marco"
+    caso (N = 4):
+      escrever "Abril"
+    caso (N = 5):
+      escrever "Maio"
+    caso (N = 6):
+      escrever "Junho"
+    outro_caso:
+      escrever "Mes invalido"
+  fim_caso
+fim

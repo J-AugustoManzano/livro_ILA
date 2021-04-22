@@ -1,0 +1,8 @@
+// programa LACO5
+variaveis
+  numerico I 
+inicio
+  para I = 1 ate 20 passo 2
+    escrever I
+  proximo
+fim 

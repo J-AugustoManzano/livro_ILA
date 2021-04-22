@@ -1,0 +1,5 @@
+// programa CONCATENA
+inicio
+  limpar
+  escrever "Interpretador " + "ILA"
+fim

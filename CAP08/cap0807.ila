@@ -1,0 +1,66 @@
+// programa COMPLEMENTAR7
+
+variaveis
+  numerico POSITIVO, UNIDADE, N, A, B, RN
+  caracter SAIDA, RC
+
+  funcao MODULO(N)
+  inicio
+    se (N < 0) entao
+      retornar N * -1
+    senao
+      retornar N 
+    fim_se
+  fim
+
+  funcao CARACTERE(N)
+  inicio
+    se (N >= -999999999) e (N <= 999999999) entao
+      SAIDA = " "
+      se (N = 0) entao
+        SAIDA = "0"
+      fim_se
+      POSITIVO = modulo(N)
+      faca enquanto (POSITIVO > 0)
+        UNIDADE = resto(POSITIVO, 10)
+        faca caso
+          caso UNIDADE = 0: 
+            SAIDA = "0" + SAIDA
+          caso UNIDADE = 1:
+            SAIDA = "1" + SAIDA
+          caso UNIDADE = 2:
+            SAIDA = "2" + SAIDA
+          caso UNIDADE = 3:
+            SAIDA = "3" + SAIDA
+          caso UNIDADE = 4:
+            SAIDA = "4" + SAIDA
+          caso UNIDADE = 5:
+            SAIDA = "5" + SAIDA
+          caso UNIDADE = 6:
+            SAIDA = "6" + SAIDA
+          caso UNIDADE = 7:
+            SAIDA = "7" + SAIDA
+          caso UNIDADE = 8:
+            SAIDA = "8" + SAIDA
+          caso UNIDADE = 9:
+            SAIDA = "9" + SAIDA
+        fim_caso
+        POSITIVO = inteiro(POSITIVO / 10)
+      fim_enquanto
+      se (N < 0) entao
+        SAIDA = "-" + SAIDA
+      fim_se
+      retornar SAIDA
+    senao
+      escrever "Erro"
+    fim_se
+  fim
+
+inicio
+  ler A
+  ler B
+  RN = A + B
+  escrever RN
+  RC = caractere(A) + caractere(B)
+  escrever RC
+fim

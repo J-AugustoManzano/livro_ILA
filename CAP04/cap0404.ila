@@ -1,0 +1,15 @@
+// programa LACO4
+variaveis
+  numerico N, I, R 
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre um valor numerico: "
+  posicionar 1,26
+  ler N
+  posicionar 3,1
+  para I = 1 ate 10 passo 1
+    R = N * I
+    escrever N, " X ", I, " = ", R
+  proximo
+fim 

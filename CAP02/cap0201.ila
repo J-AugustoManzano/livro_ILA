@@ -1,0 +1,12 @@
+// programa ADICIONA NUMEROS
+variaveis
+  numerico A, B, X
+inicio
+  limpar
+  escrever "Entre o 1o. valor:"
+  ler A 
+  escrever "Entre o 2o. valor:"
+  ler B
+  X = A + B
+  escrever "O resultado da soma equivale a: ", X
+fim

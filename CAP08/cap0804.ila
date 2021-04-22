@@ -1,0 +1,22 @@
+// programa COMPLEMENTAR4
+
+variaveis
+  numerico N, ENTRA
+
+  funcao MODULO(N)
+  inicio
+    se (N < 0) entao
+      retornar N * -1
+    senao
+      retornar N 
+    fim_se
+  fim
+
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre um valor numerico:"
+  posicionar 1,26
+  ler ENTRA
+  escrever "Resultado = ", modulo(ENTRA)
+fim

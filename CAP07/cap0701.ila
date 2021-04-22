@@ -1,0 +1,18 @@
+// programa FATORIAL1
+
+variaveis
+  numerico N, F, I
+
+  funcao FATORIAL()
+  inicio
+    F = 1
+    para I = 1 ate N
+      F = F * I
+    proximo
+    escrever F
+  fim
+
+inicio
+  ler N
+  fatorial()
+fim

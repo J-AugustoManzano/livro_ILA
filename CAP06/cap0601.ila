@@ -1,0 +1,29 @@
+// programa TABELA1
+variaveis  
+  numerico I, R 
+  matriz numerico A[10]
+  matriz numerico B[10]
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Indice de Tabela"
+  posicionar 2,1
+  para I = 1 ate 10
+    posicionar I + 2,1
+    escrever "Informe o ", I, "o. valor:"
+    posicionar I + 2,23
+    ler A[I]
+  proximo
+  para I = 1 ate 10
+    R = resto(I, 2)
+    se (R = 0) entao 
+      B[I] = A[I] * 5
+    senao
+      B[I] = A[I] + 5
+    fim_se
+  proximo
+  posicionar 14,1
+  para I = 1 ate 10
+    escrever "B[", I, "] = ", B[I]
+  proximo
+fim

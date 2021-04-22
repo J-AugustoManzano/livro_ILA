@@ -1,0 +1,18 @@
+// programa SALARIO
+variaveis 
+  numerico HT, VH, PD, SB, TD, SL
+inicio
+  limpar
+  escrever "Quantas horas de trabalho?" 
+  ler HT
+  escrever "Qual o valor da hora?" 
+  ler VH
+  escrever "Qual o percentual de desconto?" 
+  ler PD
+  SB = HT * VH
+  TD = (PD/100) * SB
+  SL = SB - TD 
+  escrever "Salario bruto ...: ", SB
+  escrever "Desconto ........: ", TD
+  escrever "Salario liquido .: ", SL
+fim

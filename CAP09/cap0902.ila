@@ -1,0 +1,97 @@
+﻿// programa CALCULADORA (cap0902.ila)
+
+variaveis
+  numerico R, A, B
+  numerico OPCAO
+  numerico X, Y
+  caracter OPERADOR
+  caracter OPERACAO
+  caracter TECLA
+
+  // {Trecho de sub-rotinas de entrada e saída}
+
+  funcao ENTRADA()
+  inicio
+    escrever "Entre o 1o. valor: " 
+    ler A
+    escrever "Entre o 2o. valor: " 
+    ler B
+  fim
+
+  funcao SAIDA()
+  inicio
+    escrever "O resultado da operacao equivale a: ", R, "."
+    TECLA = lertecla()
+  fim
+
+  // {Trecho com função para o cálculo das operações}
+
+  funcao CALCULO(X, Y, OPERADOR)
+  inicio
+    faca caso 
+      caso (OPERADOR = "+"):
+        retornar X + Y
+      caso (OPERADOR = "-"):
+        retornar X - Y
+      caso (OPERADOR = "*"):
+        retornar X * Y
+      caso (OPERADOR = "/"):
+        retornar X / Y
+    fim_caso
+  fim
+  // {Trecho com sub-rotina geral}
+  funcao ROTCALC(OPERACAO)
+  inicio
+    faca caso 
+      caso (OPERACAO = "+"):
+        escrever "Rotina de Adicao"
+      caso (OPERACAO = "-"):
+        escrever "Rotina de Subtracao"
+      caso (OPERACAO = "*"):
+        escrever "Rotina de Multiplicacao"
+      caso (OPERACAO = "/"):
+        escrever "Rotina de Divisao"
+    fim_caso
+    ENTRADA()
+    se (OPERACAO = "/") entao
+      se (B = 0) entao
+        escrever "O resultado da operacao equivale a: ERRO."
+        TECLA = lertecla()
+      senao
+        R = CALCULO(A, B, "/")
+        SAIDA()
+      fim_se
+    fim_se
+    se nao (OPERACAO = "/") entao
+      R = CALCULO(A, B, OPERACAO)
+      SAIDA()
+    fim_se
+  fim
+// {Trecho principal do programa}
+inicio
+  OPCAO = 0
+  faca enquanto (OPCAO <> 5)
+    limpar
+    escrever "1 - Adicao"
+    escrever "2 - Subtracao"
+    escrever "3 - Multiplicacao"
+    escrever "4 - Divisao"
+    escrever "5 - Fim de Programa"
+    escrever "Escolha uma opcao:"
+    ler OPCAO
+    se (OPCAO <> 5) entao
+      faca caso 
+        caso (OPCAO = 1):
+          ROTCALC("+")
+        caso (OPCAO = 2):
+          ROTCALC("-")
+        caso (OPCAO = 3):
+          ROTCALC("*")
+        caso (OPCAO = 4):
+          ROTCALC("/")
+        outro_caso:
+          escrever "Opcao invalida - Tente novamente."
+      fim_caso
+    fim_se
+  fim_enquanto
+fim

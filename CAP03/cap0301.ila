@@ -1,0 +1,21 @@
+// programa CONDICAO1
+variaveis
+  numerico A, B, X
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre 1o. valor:"
+  posicionar 1,18
+  ler A
+  posicionar 2,1
+  escrever "Entre 2o. valor: "
+  posicionar 2,18
+  ler B
+  se (A > B) entao
+    X = A
+    A = B
+    B = X 
+  fim_se
+  posicionar 4,1
+  escrever "Os valores sao: ", A, " e ", B, "." 
+fim

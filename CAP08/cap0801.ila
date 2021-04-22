@@ -1,0 +1,15 @@
+// programa COMPLEMENTAR1
+
+variaveis
+  numerico CORT, CORF
+
+inicio
+  para CORT = 0 ate 15
+    para CORF = 0 ate 15
+      posicionar CORT+1, 4*(CORF+1)
+      cor CORT,CORF
+      escrever " * "
+    proximo
+  proximo
+  cor 7,0
+fim

@@ -1,0 +1,16 @@
+// programa CONDICAO7
+variaveis
+  numerico N, R
+inicio
+  limpar
+  posicionar 1,1
+  escrever "Entre um valor numerico inteiro:"
+  posicionar 1,34
+  ler N
+  R = N - 2 * inteiro(N / 2)
+  se (R = 0) entao 
+    escrever "Valor par."
+  senao
+    escrever "Valor impar."
+  fim_se
+fim

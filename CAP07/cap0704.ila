@@ -1,0 +1,21 @@
+// programa FATORIAL4
+
+variaveis
+  numerico ENTRA, N, I
+
+  funcao FATORIAL(N)
+  inicio
+    se (N < 0) entao
+      retornar 0
+    fim_se
+    se (N = 0) entao
+      retornar 1
+    senao
+      retornar N * fatorial(N - 1)
+    fim_se
+  fim
+
+inicio
+  ler ENTRA
+  escrever fatorial(ENTRA)
+fim

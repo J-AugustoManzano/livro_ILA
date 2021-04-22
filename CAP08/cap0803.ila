@@ -1,0 +1,32 @@
+// programa COMPLEMENTAR3
+
+variaveis
+  numerico TECLA
+
+  funcao TECLE()
+  inicio
+    posicionar 24,5
+    escrever "Tecle <barra de espaco>:"
+    TECLA = 0
+    faca enquanto (TECLA <> 32)
+       limpar 24,30,24,31
+       posicionar 24,30
+       TECLA = lertecla()
+    fim_enquanto
+  fim
+
+inicio
+  limpar
+  cor "branco","vermelho"
+  janela 3,3,7,22
+  posicionar 5,5
+  cor "amarelo","vermelho"
+  escrever "TESTE DE MOLDURA"
+  cor "verde_intenso","preto"
+  tecle()
+  limpar 5,5,5,20
+  posicionar 5,5
+  cor "ciano_intenso","vermelho"
+  escrever " TEXTO ALTERADO "
+  cor
+fim

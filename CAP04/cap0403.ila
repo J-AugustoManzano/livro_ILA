@@ -1,0 +1,23 @@
+// programa LACO3
+variaveis
+  numerico N, R 
+  caracter RESP 
+inicio
+  RESP = "S"
+  faca enquanto (RESP = "S") ou (RESP = "s")
+    limpar
+    posicionar 1,1
+    escrever "Entre um valor numerico: "
+    posicionar 1,26
+    ler N
+    R = N ^ 2
+    posicionar 3,1
+    escrever "O quadro de ", N, " equivale a ", R
+    posicionar 6,1
+    escrever "Deseja continuar?"
+    posicionar 7,1
+    escrever "[S] para sim / outra letra para nao."
+    posicionar 7,38
+    ler RESP
+  fim_enquanto
+fim
